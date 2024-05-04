@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CompilerActivity"
+    android:background="@color/back">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="327dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Compiler Quiz"
+        android:textColor="#CA0346"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="370dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Q1-What is the primary method or methods for implementing a scanner."
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup1"
+        android:layout_width="393dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <RadioButton
+            android:id="@+id/scanner"
+            android:layout_width="113dp"
+            android:layout_height="wrap_content"
+            android:text="Scanner" />
+
+        <RadioButton
+            android:id="@+id/fa_re"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="FA And RE" />
+
+        <RadioButton
+            android:id="@+id/all"
+            android:layout_width="162dp"
+            android:layout_height="match_parent"
+            android:text="All Of The Above" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="348dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:text="Q2-What is The First of S :\nS→AcB  A→aA   A→ε"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radiogroup1" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup2"
+        android:layout_width="387dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <RadioButton
+            android:id="@+id/amzm"
+            android:layout_width="112dp"
+            android:layout_height="wrap_content"
+            android:text="a" />
+
+        <RadioButton
+            android:id="@+id/a_ε"
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
+            android:text="a And ε" />
+
+        <RadioButton
+            android:id="@+id/a_c"
+            android:layout_width="104dp"
+            android:layout_height="wrap_content"
+            android:text="a And c" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radiogroup3"
+        android:layout_width="376dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <RadioButton
+            android:id="@+id/a_b"
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:text="a And b" />
+
+        <RadioButton
+            android:id="@+id/a"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="a" />
+
+        <RadioButton
+            android:id="@+id/b"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="b And ε" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="351dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Q3-What Is The Follow of A:\n S→AaAb   A→ ε"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radiogroup2" />
+
+    <Button
+        android:id="@+id/score"
+        android:layout_width="178dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button_custom"
+        android:text="Score"
+        android:textAllCaps="false"
+        android:textColor="#E91E63"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radiogroup3" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="361dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textColor="#CA0346"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/score"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

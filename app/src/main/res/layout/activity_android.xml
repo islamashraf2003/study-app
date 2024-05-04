@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AndroidActivity"
+    android:background="@color/back">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="327dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Android Quiz"
+        android:textColor="#CA0346"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="350dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="Q1-What You Would Use If You Want To Move From Activity1 To Activity2."
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup1"
+        android:layout_width="393dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <RadioButton
+            android:id="@+id/buttonn"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:text="Button" />
+
+        <RadioButton
+            android:id="@+id/intent"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Intent" />
+
+        <RadioButton
+            android:id="@+id/transition"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Transition" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="370dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"
+        android:text="Q2-Where Did You Write Code You Want To Have Access On Android Hardware"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radiogroup1" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup2"
+        android:layout_width="360dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <RadioButton
+            android:id="@+id/java"
+            android:layout_width="107dp"
+            android:layout_height="wrap_content"
+            android:text="java File" />
+
+        <RadioButton
+            android:id="@+id/mainifests"
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+            android:text="mainifest File" />
+
+        <RadioButton
+            android:id="@+id/xml"
+            android:layout_width="104dp"
+            android:layout_height="match_parent"
+            android:text="xml file" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radiogroup3"
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <RadioButton
+            android:id="@+id/image"
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:text="ImageView" />
+
+        <RadioButton
+            android:id="@+id/imgb"
+            android:layout_width="139dp"
+            android:layout_height="wrap_content"
+            android:text="ImageButton" />
+
+        <RadioButton
+            android:id="@+id/button"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Button" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="410dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="24dp"
+        android:text="Q3-I Want To Put Image On My Button \nCan You Help Me What I Can Use? "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radiogroup2" />
+
+    <Button
+        android:id="@+id/score"
+        android:layout_width="178dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button_custom"
+        android:text="Score"
+        android:textAllCaps="false"
+        android:textColor="#E91E63"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radiogroup3" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="361dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textColor="#CA0346"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/score" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

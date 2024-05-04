@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/email"
+        android:title="Email"
+        />
+
+    <item
+        android:id="@+id/help"
+        android:title="Help"
+        />
+
+    <item
+        android:icon="@drawable/logout_icon"
+        android:id="@+id/logout"
+        android:iconTint="@color/red1"
+        android:title="Logout"
+        />
+</menu>

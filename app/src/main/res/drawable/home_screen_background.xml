@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background color -->
+    <item android:drawable="@android:color/white" />
+
+    <!-- Toolbar background -->
+    <item
+        android:id="@+id/toolbar_background"
+        android:gravity="top">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/lightBlue" />
+        </shape>
+    </item>
+
+    <!-- Card backgrounds -->
+    <item
+        android:id="@+id/card_background"
+        android:top="120dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+
+</layer-list>
